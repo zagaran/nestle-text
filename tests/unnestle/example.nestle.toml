@@ -3,7 +3,9 @@
 [[src]]
 # and dot notation to declare a subdirectory.
 [[src.utils]]
-# Use single brackets to declare a file. Use quotes whenever a file or directory has a dot in its name.  Here we define a top level file LICENSE.txt
+# Use single brackets to declare a file. Use quotes whenever
+# a file or directory has a dot in its name.
+# Here we define a top level file LICENSE.txt
 ["LICENSE.txt"]
 # File contents are given inline using the "content" key
 content = "This text will be placed inside LICENSE.txt"
@@ -12,7 +14,7 @@ content = "This text will be placed inside LICENSE.txt"
 # Larger files can be included by providing a system path
 source = "files/readme-template-version-2.md"
 
-[gitignore]
+[".gitignore"]
 # Pull a standard gitignore from github
 url = "https://raw.githubusercontent.com/github/gitignore/main/Python.gitignore"
 

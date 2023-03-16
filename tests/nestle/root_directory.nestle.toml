@@ -17,6 +17,3 @@ def true_or_false(arg):
     else:
         return False
 """
-
-[gitignore]
-source = "root_directory/gitignore"

@@ -1,8 +1,8 @@
 # nestle-text
 
 Nestle-Text is a lightweight format for describing a directory tree structure and its contents.
-Nestle-Text uses a simple and intuitive syntax that is easy to read and write,
-making it useful for describing and editing small projects with file structures that are complex or in flux.
+It uses a simple and intuitive syntax that is easy to read and write,
+making it useful for editing small projects with complicated or uncertain file structures.
 
 ## Installation
 
@@ -41,9 +41,13 @@ Here is an example of a directory structure described in Nestle-Text format:
 # The root directory name is specified by the argument to unnestle, so it doesn't appear in this file
 # Use double brackets to declare a top level folder
 [[src]]
+
 # and dot notation to declare a subdirectory.
 [[src.utils]]
-# Use single brackets to declare a file. Use quotes whenever a file or directory has a dot in its name.  Here we define a top level file LICENSE.txt
+
+# Use single brackets to declare a file. Use quotes whenever 
+# a file or directory has a dot in its name.
+# Here we define a top level file LICENSE.txt
 ["LICENSE.txt"]
 # File contents are given inline using the "content" key
 content = "This text will be placed inside LICENSE.txt"
@@ -52,7 +56,7 @@ content = "This text will be placed inside LICENSE.txt"
 # Larger files can be included by providing a system path
 source = "files/readme-template-version-2.md"
 
-[gitignore]
+[".gitignore"]
 # Pull a standard gitignore from github
 url = "https://raw.githubusercontent.com/github/gitignore/main/Python.gitignore"
 
