@@ -89,6 +89,17 @@ content = """
 source = "files/personal-animated-gif-collection/not_bad-small.gif"
 ```
 
+## Tests
+To test the `nestle` command:
+
+    cd tests/nestle
+    nestle root_directory
+
+To test the `unnestle` command:
+
+    cd tests/unnestle
+    unnestle example.nestle.toml
+
 ## Future directions
 - Allow the specification of file permissions in addition to content
 - Somehow support syntax highlighting when editing nestle.toml files
