@@ -1,0 +1,34 @@
+# The root directory name is specified by the argument to unnestle, so it doesn't appear in this file.
+# Use double brackets to declare a folder
+[[src]]
+# and dot notation to declare a subdirectory.
+[[src.utils]]
+# Use single brackets to declare a file. Use quotes whenever a file or directory has a dot in its name.  Here we define a top level file LICENSE.txt
+["LICENSE.txt"]
+# File contents are given inline using the "content" key
+content = "This text will be placed inside LICENSE.txt"
+
+["README.md"]
+# Larger files can be included by providing a system path
+source = "files/readme-template-version-2.md"
+
+[gitignore]
+# Pull a standard gitignore from github
+url = "https://raw.githubusercontent.com/github/gitignore/main/Python.gitignore"
+
+[[src.core]]
+# It can be nice to give a comment when introducing a new file or directory.
+
+[src.core."core.py"]
+# The entire functionality of the project is included in the following simple python file
+content = """
+def hello_world():
+    return "Hello world!"
+"""
+
+# Nesting directories is easy
+[[src.utils.datetimes]]
+[src.utils.datetimes."timezone_helpers.py"]
+content = """
+# TODO: write some useful functions for timezones, should be easy
+"""

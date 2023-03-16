@@ -1,0 +1,1 @@
+This text will be placed inside LICENSE.txt
