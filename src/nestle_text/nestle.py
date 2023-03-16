@@ -41,7 +41,7 @@ def path_to_data(path, max_lines=30):
     return data
 
 
-if __name__ == '__main__':
+def main():
     parser = argparse.ArgumentParser(description='Build a .nestle.toml file from a directory tree')
     parser.add_argument('root', type=str, help='path to the root directory')
     parser.add_argument('--max-lines', type=int, default=30, help='maximum number of lines for text files')
@@ -63,3 +63,7 @@ if __name__ == '__main__':
     with open(output, 'w') as f:
         toml.dump(nestle_toml, f, encoder=MultilinePreferringTomlEncoder())
     print(f"{output} successfully generated")
+
+
+if __name__ == '__main__':
+    main()

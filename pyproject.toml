@@ -6,12 +6,17 @@ authors = [
 ]
 description = "A lightweight TOML-based format for describing a directory tree structure and its contents. Nestle-Text uses a simple and intuitive syntax that is easy to read and write, making it useful for describing and editing small projects with file structures that are complex or in flux."
 readme = "README.md"
+dependencies = ["binaryornot", "requests", "toml"]
 requires-python = ">=3.6"
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
+
+[project.scripts]
+nestle = "nestle_text.nestle:main"
+unnestle = "nestle_text.unnestle:main"
 
 [project.urls]
 "Source" = "https://github.com/zagaran/nestle-text"

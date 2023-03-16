@@ -28,7 +28,13 @@ def create_directory_tree(root_path, tree):
             create_directory_tree(subdirectory_path, {k: v for d in subtree for k, v in d.items()})
 
 
-def unnestle(args):
+def main():
+    parser = argparse.ArgumentParser(description='Convert a Nestle-Text file to a directory tree.')
+    parser.add_argument('filename', type=str, help='The .nestle.toml file to expand into a directory tree')
+    parser.add_argument('--root', type=str, help='The name of the root directory to create. If not provided, the root directory will be named after the filename without the .nestle.toml extension.')
+    parser.add_argument('--hard', action='store_true', help='Delete and replace the target directory')
+    args = parser.parse_args()
+
     root_name = args.root
     expected_ending = ".nestle.toml"
     if not root_name and args.filename.endswith(expected_ending):
@@ -50,10 +56,4 @@ def unnestle(args):
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Convert a Nestle-Text file to a directory tree.')
-    parser.add_argument('filename', type=str, help='The .nestle.toml file to convert.')
-    parser.add_argument('--root', type=str, help='The name of the root directory to create. If not provided, the root directory will be named after the filename without the .nestle.toml extension.')
-    parser.add_argument('--hard', action='store_true', help='Remove the target directory if it already exists before converting.')
-    args = parser.parse_args()
-
-    unnestle(args)
+    main()

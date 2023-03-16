@@ -38,7 +38,8 @@ This will create a file called `my_project.nestle.toml` in the current working d
 Here is an example of a directory structure described in Nestle-Text format:
 
 ```
-# The root directory name is specified by the argument to unnestle, so it doesn't appear in this file
+# The root directory name is specified by the argument to unnestle,
+# so it doesn't appear in this file
 # Use double brackets to declare a top level folder
 [[src]]
 
@@ -86,3 +87,5 @@ source = "files/personal-animated-gif-collection/not_bad-small.gif"
 
 ## Future directions
 - Allow the specification of file permissions in addition to content
+- Somehow support syntax highlighting when editing nestle.toml files
+- Automatically sync a directory and its nestle.toml file when either one is edited

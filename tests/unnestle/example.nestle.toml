@@ -1,4 +1,6 @@
-# The root directory name is specified by the argument to unnestle, so it doesn't appear in this file.
+# The root directory name is specified by the argument to unnestle,
+# so it doesn't appear in this file.
+
 # Use double brackets to declare a folder
 [[src]]
 # and dot notation to declare a subdirectory.
