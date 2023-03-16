@@ -15,6 +15,12 @@ To install nestle-text, you can use pip (not yet, actually):
 pip install nestle-text
 ```
 
+To install from source, clone the repo, and then run
+
+```sh
+pip install --editable path/to/cloned/nestle-text
+```
+
 ## Usage
 To use Nestle-Text, you can use the following command line tools:
 
