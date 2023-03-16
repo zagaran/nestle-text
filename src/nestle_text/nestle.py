@@ -62,7 +62,7 @@ def main():
     nestle_toml = path_to_data(root, max_lines)
     with open(output, 'w') as f:
         toml.dump(nestle_toml, f, encoder=MultilinePreferringTomlEncoder())
-    print(f"{output} successfully generated")
+    print(f"Wrote file at {output}")
 
 
 if __name__ == '__main__':

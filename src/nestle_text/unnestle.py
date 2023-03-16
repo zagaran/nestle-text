@@ -53,6 +53,7 @@ def main():
         raise Exception("Root directory already exists.  Use the --hard flag to force an overwrite")
 
     create_directory_tree(root_path, data)
+    print(f"Wrote directory at {root_path}")
 
 
 if __name__ == '__main__':
