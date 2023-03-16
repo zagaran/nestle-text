@@ -90,14 +90,12 @@ source = "files/personal-animated-gif-collection/not_bad-small.gif"
 ```
 
 ## Tests
-To test the `nestle` command:
+To test the `nestle` command, move to the `tests/nestle` directory and run:
 
-    cd tests/nestle
     nestle root_directory
 
-To test the `unnestle` command:
+To test the `unnestle` command, move to the `tests/unnestle` directory and run:
 
-    cd tests/unnestle
     unnestle example.nestle.toml
 
 ## Future directions
