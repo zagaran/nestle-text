@@ -36,3 +36,9 @@ def hello_world():
 content = """
 # TODO: write some useful functions for timezones, should be easy
 """
+
+# Non-text files can only be included using the "source" key
+[[assets]]
+[[assets.gifs]]
+[assets.gifs."not_bad.gif"]
+source = "files/personal-animated-gif-collection/not_bad-small.gif"
