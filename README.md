@@ -95,6 +95,12 @@ content = """
 source = "files/personal-animated-gif-collection/not_bad-small.gif"
 ```
 
+For example, to generate a nestle-text file describing this git repo, you can run
+
+    nestle . --git-only
+
+which will regenerate the file `nestle-text.nestle.toml`.
+
 ## Tests
 To test the `nestle` command, move to the `tests/nestle` directory and run:
 
