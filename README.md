@@ -15,10 +15,10 @@ To install nestle-text, you can use pip (not yet, actually):
 pip install nestle-text
 ```
 
-To install from source, clone the repo, and then run
+To install from git, you can run
 
 ```sh
-pip install --editable path/to/cloned/nestle-text
+pip install git+https://github.com/zagaran/nestle-text.git
 ```
 
 ## Usage
