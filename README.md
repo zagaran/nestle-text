@@ -2,20 +2,16 @@
 
 Nestle-Text is a lightweight, human-friendly format for encoding a directory tree structure and its contents.
 Its cozy TOML-based syntax aids reading, writing, and editing 
-small text- or code-based projects with complex or provisional file structures.  Nestle-Text is handy when prototyping
-or stubbing out new projects, sharing project templates, performing refactors that move and rename lots of files, or
-even postponing decisions on project structure until a clear organizing principle emerges.  Nestle-Text files 
-typically use the extension `.nestle.toml`.
+small text-based projects with complex or evolving file structures.  Nestle-Text is handy when...
+- prototyping or stubbing out new projects;
+- sharing project templates;
+- performing refactors that move and rename lots of files; or even 
+- postponing decisions on project structure until a clear organizing principle emerges.
+
+Nestle-Text files typically use the extension `.nestle.toml`.
 
 ## Installation
-
-To install nestle-text, you can use pip (not yet, actually):
-
-```sh
-pip install nestle-text
-```
-
-To install from git, you can run
+To install nestle-text from git, you can run
 
 ```sh
 pip install git+https://github.com/zagaran/nestle-text.git

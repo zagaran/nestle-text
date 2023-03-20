@@ -21,7 +21,7 @@ def create_directory_tree(root_path, tree):
                 with open(filepath, 'wb') as f:
                     f.write(response.content)
             else:
-                raise ValueError("File declaration must use one of the keys 'source', 'content', or 'url'")
+                raise ValueError(f"File declaration {filepath} must use one of the keys 'source', 'content', or 'url'; found {list(subtree.keys())}")
         elif isinstance(subtree, list):
             subdirectory_path = os.path.join(root_path, item)
             os.makedirs(subdirectory_path, exist_ok=True)
